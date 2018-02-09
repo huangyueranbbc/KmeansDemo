@@ -30,7 +30,7 @@ public class KmeansMain {
         int k = 5; // K值
         KmeansModel model = Kmeans.run(points, k);
 
-        writer.write("====================   K is "+model.getK() +"   Object Funcion Value is"+model.getOfv()+"   ====================\n");
+        writer.write("====================   K is "+model.getK() +"   Object Funcion Value is "+model.getOfv()+"   ====================\n");
         int i = 0;
         for (Cluster cluster : model.getClusters()) {
             i++;

@@ -1,0 +1,37 @@
+====================   K is 5   Object Funcion Value is23.68353921166051   ====================
+====================   classification 1   ====================
+Point{x=0.8, y=9.8}
+Point{x=1.2, y=11.6}
+Point{x=2.8, y=9.6}
+Point{x=3.8, y=9.9}
+
+centroid is Point{x=2.15, y=10.225}
+
+====================   classification 2   ====================
+Point{x=6.0, y=19.9}
+Point{x=6.2, y=18.5}
+Point{x=7.6, y=17.4}
+
+centroid is Point{x=6.6, y=18.6}
+
+====================   classification 3   ====================
+Point{x=4.4, y=6.5}
+Point{x=6.6, y=7.7}
+Point{x=8.2, y=4.5}
+Point{x=8.4, y=6.9}
+Point{x=9.0, y=3.4}
+
+centroid is Point{x=7.3199997, y=5.8}
+
+====================   classification 4   ====================
+Point{x=4.8, y=1.1}
+
+centroid is Point{x=4.8, y=1.1}
+
+====================   classification 5   ====================
+Point{x=6.8, y=12.6}
+Point{x=7.8, y=12.2}
+Point{x=9.6, y=11.1}
+
+centroid is Point{x=8.066667, y=11.966667}
+

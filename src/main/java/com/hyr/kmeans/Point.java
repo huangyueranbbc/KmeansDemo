@@ -47,6 +47,7 @@ public class Point {
      * @return
      */
     public Double calculateDistance(Point centroid, int type) {
+        // TODO
         Double result = null;
         switch (type) {
             case 1: // 欧氏距离

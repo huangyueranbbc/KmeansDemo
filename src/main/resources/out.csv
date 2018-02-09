@@ -1,22 +1,24 @@
-====================   K is 5   Object Funcion Value is 33.46551091227879   ====================
+====================   K is 6   Object Funcion Value is 33.82937373610148   ====================
 ====================   classification 1   ====================
-Point{x=6.0, y=19.9}
-Point{x=6.2, y=18.5}
-Point{x=5.3, y=19.4}
-Point{x=7.6, y=17.4}
+Point{x=4.4, y=6.5}
+Point{x=5.3, y=6.4}
+Point{x=6.6, y=7.7}
+Point{x=8.2, y=4.5}
+Point{x=8.4, y=6.9}
 
-centroid is Point{x=6.275, y=18.800001}
+centroid is Point{x=6.5800004, y=6.3999996}
 
 ====================   classification 2   ====================
-Point{x=0.8, y=9.8}
-Point{x=1.2, y=11.6}
-Point{x=2.8, y=9.6}
-Point{x=3.8, y=9.9}
-Point{x=3.5, y=12.5}
+Point{x=4.8, y=1.1}
+Point{x=9.0, y=3.4}
 
-centroid is Point{x=2.42, y=10.68}
+centroid is Point{x=6.9, y=2.25}
 
 ====================   classification 3   ====================
+
+centroid is Point{x=2.0905879, y=14.874283}
+
+====================   classification 4   ====================
 Point{x=6.8, y=12.6}
 Point{x=7.8, y=12.2}
 Point{x=6.1, y=14.3}
@@ -25,18 +27,20 @@ Point{x=9.6, y=11.1}
 
 centroid is Point{x=7.7, y=12.259999}
 
-====================   classification 4   ====================
-Point{x=8.2, y=4.5}
-Point{x=9.0, y=3.4}
-
-centroid is Point{x=8.6, y=3.95}
-
 ====================   classification 5   ====================
-Point{x=4.4, y=6.5}
-Point{x=4.8, y=1.1}
-Point{x=5.3, y=6.4}
-Point{x=6.6, y=7.7}
-Point{x=8.4, y=6.9}
+Point{x=0.8, y=9.8}
+Point{x=1.2, y=11.6}
+Point{x=2.8, y=9.6}
+Point{x=3.8, y=9.9}
+Point{x=3.5, y=12.5}
 
-centroid is Point{x=5.9, y=5.7200003}
+centroid is Point{x=2.42, y=10.68}
+
+====================   classification 6   ====================
+Point{x=6.0, y=19.9}
+Point{x=6.2, y=18.5}
+Point{x=5.3, y=19.4}
+Point{x=7.6, y=17.4}
+
+centroid is Point{x=6.275, y=18.800001}
 

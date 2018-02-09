@@ -65,7 +65,6 @@ public class Kmeans {
         Random random = new Random();
         // 随机初始化k个中心点
         for (int i = 0; i < k; i++) {
-
             float x = random.nextFloat() * (max_X - min_X) + min_X;
             float y = random.nextFloat() * (max_Y - min_Y) + min_X;
             Cluster c = new Cluster();

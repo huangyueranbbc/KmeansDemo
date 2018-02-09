@@ -27,7 +27,7 @@ public class KmeansMain {
             points.add(new Point(Float.parseFloat(entry[0]), Float.parseFloat(entry[1])));
         }
 
-        int k = 5; // K值
+        int k = 6; // K值
         KmeansModel model = Kmeans.run(points, k);
 
         writer.write("====================   K is "+model.getK() +"   Object Funcion Value is "+model.getOfv()+"   ====================\n");

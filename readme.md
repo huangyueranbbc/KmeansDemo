@@ -14,16 +14,5 @@
   
 3. the final center point set can be divided into k classes, and the new center points in each class are calculated respectively.  
   
-4. repeat 2,3 steps to classify all points, and eventually converge if the centroid points of all categories are no longer changed.  
-  
-  
-  
-  
-1. Seleccionar el valor de K, K inicial Centro de azar.  
-  
-2. Calcula la distancia entre cada punto y la clasificación de partículas cerca de K.  
-  
-3. Punto final puede dividirse en centro conjunto K, calcular el punto central de nuevo  en cada clase.  
-  
-4. Repita el paso 2 y 3 en la clasificación de todos los puntos, si el punto de centro de masa cuando la clasificación ya no cambia, la convergencia final.    
+4. repeat 2,3 steps to classify all points, and eventually converge if the centroid points of all categories are no longer changed.     
   

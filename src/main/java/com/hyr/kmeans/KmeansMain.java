@@ -28,18 +28,19 @@ public class KmeansMain {
         }
 
         int k = 6; // K值
-        KmeansModel model = Kmeans.run(points, k);
+        int type = 1;
+        KmeansModel model = Kmeans.run(points, k, type);
 
-        writer.write("====================   K is "+model.getK() +"   Object Funcion Value is "+model.getOfv()+"   ====================\n");
+        writer.write("====================   K is " + model.getK() + " ,  Object Funcion Value is " + model.getOfv() + " ,  calc_distance_type is " + model.getCalc_distance_type() + "   ====================\n");
         int i = 0;
         for (Cluster cluster : model.getClusters()) {
             i++;
             writer.write("====================   classification " + i + "   ====================\n");
-            for (Point point: cluster.getPoints()) {
+            for (Point point : cluster.getPoints()) {
                 writer.write(point.toString() + "\n");
             }
             writer.write("\n");
-            writer.write("centroid is "+cluster.getCentroid().toString());
+            writer.write("centroid is " + cluster.getCentroid().toString());
             writer.write("\n\n");
         }
 

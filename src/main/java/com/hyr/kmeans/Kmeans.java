@@ -16,8 +16,9 @@ public class Kmeans {
      *
      * @param points 数据集
      * @param k      K值
+     * @param k      计算距离方式
      */
-    public static KmeansModel run(List<Point> points, int k) {
+    public static KmeansModel run(List<Point> points, int k, int type) {
         // 初始化质心点
         List<Cluster> clusters = initCentroides(points, k);
 
@@ -26,14 +27,14 @@ public class Kmeans {
             // 2.判断质心点是否改变,未改变则该分类已经收敛
             // 3.重新生成质心点
             initClusters(clusters); // 重置分类中的点
-            classifyPoint(points, clusters);// 计算距离进行分类 L1 L2 余弦相似度
+            classifyPoint(points, clusters, type);// 计算距离进行分类
             recalcularCentroides(clusters); // 重新计算质心点
         }
 
         // 计算目标函数值
         Double ofv = calcularObjetiFuncionValue(clusters);
 
-        KmeansModel kmeansModel = new KmeansModel(clusters, ofv, k);
+        KmeansModel kmeansModel = new KmeansModel(clusters, ofv, k, type);
 
         return kmeansModel;
     }
@@ -114,13 +115,13 @@ public class Kmeans {
      *
      * @param points   点集
      * @param clusters 分类
+     * @param type     计算距离方式
      */
-    private static void classifyPoint(List<Point> points, List<Cluster> clusters) {
+    private static void classifyPoint(List<Point> points, List<Cluster> clusters, int type) {
         for (Point point : points) {
             Cluster masCercano = clusters.get(0); // 该点计算距离后所属的分类
             Double minDistancia = Double.MAX_VALUE; // 最小距离
             for (Cluster cluster : clusters) {
-                int type = 1; // 选择计算距离的方式 1:L1 2:L2 3:余弦相似度
                 Double distancia = point.calculateDistance(cluster
                         .getCentroid(), type); // 点和每个分类质心点的距离
                 if (minDistancia > distancia) { // 得到该点和k个质心点最先的距离

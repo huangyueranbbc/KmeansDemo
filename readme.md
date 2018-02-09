@@ -16,3 +16,4 @@
   
 4. repeat 2,3 steps to classify all points, and eventually converge if the centroid points of all categories are no longer changed.     
   
+  

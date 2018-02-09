@@ -22,7 +22,7 @@ public class Kmeans {
         // 初始化质心点
         List<Cluster> clusters = initCentroides(points, k);
 
-        while (!checkConvergence(clusters)) {
+        while (!checkConvergence(clusters)) { // 所有分类是否全部收敛
             // 1.计算距离对每个点进行分类
             // 2.判断质心点是否改变,未改变则该分类已经收敛
             // 3.重新生成质心点
@@ -122,9 +122,8 @@ public class Kmeans {
             Cluster masCercano = clusters.get(0); // 该点计算距离后所属的分类
             Double minDistancia = Double.MAX_VALUE; // 最小距离
             for (Cluster cluster : clusters) {
-                Double distancia = point.calculateDistance(cluster
-                        .getCentroid(), type); // 点和每个分类质心点的距离
-                if (minDistancia > distancia) { // 得到该点和k个质心点最先的距离
+                Double distancia = point.calculateDistance(cluster.getCentroid(), type); // 点和每个分类质心点的距离
+                if (minDistancia > distancia) { // 得到该点和k个质心点最小的距离
                     minDistancia = distancia;
                     masCercano = cluster; // 得到该点的分类
                 }

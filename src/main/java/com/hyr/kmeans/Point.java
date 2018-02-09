@@ -63,6 +63,12 @@ public class Point {
         return result;
     }
 
+
+
+    /*
+            计算距离公式
+     */
+
     private Double calcL1Distance(Point centroid) {
         double res = 0;
         res = Math.abs(getX() - centroid.getX()) + Math.abs(getY() - centroid.getY());
